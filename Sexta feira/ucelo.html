@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucelo - Página Principal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Jost', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: #fff;
+            text-shadow: 0 0 10px #00ffff;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: #00ffff;
+        }
+
+        .logout-btn {
+            margin-top: 2rem;
+            padding: 10px 25px;
+            background: transparent;
+            border: 2px solid #00ffff;
+            color: #00ffff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .logout-btn:hover {
+            background: #00ffff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Ucelo</h1>
+        <p>Bem-vindo à sua página principal</p>
+    </div>
+
+    <div class="content">
+        <h2>Dashboard</h2>
+        <p>Aqui você pode gerenciar suas informações e acessar os recursos da plataforma Ucelo.</p>
+        
+        <div class="features">
+            <div class="feature-card">
+                <h3>Perfil</h3>
+                <p>Gerencie suas informações pessoais e preferências</p>
+            </div>
+            <div class="feature-card">
+                <h3>Configurações</h3>
+                <p>Personalize sua experiência na plataforma</p>
+            </div>
+            <div class="feature-card">
+                <h3>Suporte</h3>
+                <p>Entre em contato com nossa equipe de suporte</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="logout-btn" onclick="window.location.href='main.html'">Logout</button>
+</body>
+</html>
